@@ -31,3 +31,9 @@ select ename,
     sal,
     NVL2(comm, comm, 0) as commission_value
 from emp_old;
+-- // query to find employees who get commision
+select sal + comm
+from emp_old;
+-- // query to find employees who get commision
+select sal + nvl(comm, 0)
+from emp_old;
